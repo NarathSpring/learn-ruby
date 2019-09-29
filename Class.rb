@@ -50,8 +50,8 @@ puts Game.instance_methods(false)
     # end
 
 mario = Game.new("Mario", 299)
-if mario.respond_to?('show')
-  mario.show()
+if mario.respond_to?("show")
+  mario.send("show")
 end
 
 
